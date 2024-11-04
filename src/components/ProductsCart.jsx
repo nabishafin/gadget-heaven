@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+
 
 const ProductsCart = ({ product }) => {
 
@@ -17,7 +18,7 @@ const ProductsCart = ({ product }) => {
                     <h2 className="card-title text-3xl">{product?.product_title || 'N/C'}</h2>
                     <p className='font-bold'>Price : $ {product?.price || 'N/C'}</p>
                     <div className="card-actions">
-                        <Link ><button className='bg-[#9538E2] text-white p-2 rounded-2xl hover:bg-[#380d5b]'>View Details</button></Link>
+                        <Link><button className='bg-[#9538E2] text-white p-2 rounded-2xl hover:bg-[#380d5b]'>View Details</button></Link>
                     </div>
                 </div>
             </div>
