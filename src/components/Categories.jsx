@@ -7,7 +7,6 @@ const Categories = () => {
             <button className='btn w-full'>Laptops</button>
             <button className='btn w-full'>Phones</button>
             <button className='btn w-full'>watches</button>
-
         </div>
     );
 };
