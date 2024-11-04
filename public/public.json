@@ -1,0 +1,226 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Galaxy S21",
+        "product_image": "https://i.ibb.co.com/qBTKcjz/Galaxy-S21.jpg",
+        "category": "phones",
+        "price": 799,
+        "description": "Samsung's flagship smartphone with stunning display and camera.",
+        "Specification": [
+            "6.2 inch AMOLED display",
+            "Triple camera system",
+            "128GB storage",
+            "4000mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 2,
+        "product_title": "iPhone 13",
+        "product_image": "https://i.ibb.co.com/23C1nxr/i-Phone-13.jpg",
+        "category": "phones",
+        "price": 999,
+        "description": "Apple's latest smartphone with A15 chip and dual camera.",
+        "Specification": [
+            "6.1 inch Super Retina XDR display",
+            "12MP dual-camera system",
+            "128GB storage",
+            "3095mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 3,
+        "product_title": "Pixel 6",
+        "product_image": "https://i.ibb.co.com/8dmkcs7/Pixel-6.webp",
+        "category": "phones",
+        "price": 599,
+        "description": "Google's flagship phone featuring advanced AI camera.",
+        "Specification": [
+            "6.4 inch OLED display",
+            "50MP camera",
+            "128GB storage",
+            "4614mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 4,
+        "product_title": "OnePlus 9",
+        "product_image": "https://i.ibb.co.com/Sf5mqb0/One-Plus-9.jpg",
+        "category": "phones",
+        "price": 729,
+        "description": "High-performance smartphone with Hasselblad camera.",
+        "Specification": [
+            "6.55 inch Fluid AMOLED display",
+            "48MP triple camera",
+            "128GB storage",
+            "4500mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 5,
+        "product_title": "Xiaomi Mi 11",
+        "product_image": "https://i.ibb.co.com/hZTHX67/Xiaomi-Mi-11.jpg",
+        "category": "phones",
+        "price": 749,
+        "description": "Flagship phone with powerful Snapdragon 888 processor.",
+        "Specification": [
+            "6.81 inch AMOLED display",
+            "108MP triple camera",
+            "256GB storage",
+            "4600mAh battery"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 6,
+        "product_title": "Sony Xperia 5 III",
+        "product_image": "https://i.ibb.co.com/pZMsKbn/Sony-Xperia-5-III.jpg",
+        "category": "phones",
+        "price": 999,
+        "description": "Compact smartphone with a triple lens camera and high refresh rate display.",
+        "Specification": [
+            "6.1 inch OLED display",
+            "12MP triple camera",
+            "128GB storage",
+            "4500mAh battery"
+        ],
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "product_id": 7,
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/4NcYYzg/Mac-Book-Pro-14.webp",
+        "category": "laptops",
+        "price": 1999,
+        "description": "Apple's powerful laptop with M1 Pro chip and stunning Retina display.",
+        "Specification": [
+            "14 inch Retina display",
+            "M1 Pro chip",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 8,
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/qgWYYzC/Dell-XPS-13.jpg",
+        "category": "laptops",
+        "price": 1399,
+        "description": "Premium laptop with InfinityEdge display and sleek design.",
+        "Specification": [
+            "13.4 inch FHD+ display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 9,
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/b55CM99/HP-Spectre-x360.webp",
+        "category": "laptops",
+        "price": 1499,
+        "description": "Versatile 2-in-1 laptop with premium design and performance.",
+        "Specification": [
+            "13.3 inch 4K display",
+            "Intel Core i7",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 10,
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/DWndVkF/Lenovo-Think-Pad-X1-Carbon.webp",
+        "category": "laptops",
+        "price": 1649,
+        "description": "Lightweight business laptop with robust performance and durability.",
+        "Specification": [
+            "14 inch UHD display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 11,
+        "product_title": "Asus ROG Zephyrus G14",
+        "product_image": "https://i.ibb.co.com/XxqGrkt/Asus-ROG-Zephyrus-G14.jpg",
+        "category": "laptops",
+        "price": 1499,
+        "description": "Gaming laptop with powerful graphics and compact design.",
+        "Specification": [
+            "14 inch FHD display",
+            "AMD Ryzen 9",
+            "32GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 12,
+        "product_title": "Microsoft Surface Laptop 4",
+        "product_image": "https://i.ibb.co.com/mHY7jdT/Microsoft-Surface-Laptop-4.jpg",
+        "category": "laptops",
+        "price": 1399,
+        "description": "Stylish laptop with excellent battery life and touchscreen.",
+        "Specification": [
+            "13.5 inch PixelSense display",
+            "Intel Core i5",
+            "8GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 13,
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/vJZVLTr/Apple-Watch-Series-7.jpg",
+        "category": "watches",
+        "price": 399,
+        "description": "Smartwatch with fitness tracking and health features.",
+        "Specification": [
+            "Always-on Retina display",
+            "Water resistant",
+            "GPS and cellular",
+            "Heart rate monitor"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 14,
+        "product_title": "Galaxy Watch 4",
+        "product_image": "https://i.ibb.co.com/PQSb2WR/Galaxy-Watch-4.jpg",
+        "category": "watches",
+        "price": 249,
+        "description": "Smartwatch with health tracking and stylish design.",
+        "Specification": [
+            "1.4 inch AMOLED display",
+            "Body composition analysis",
+            "GPS",
+            "Heart rate monitoring"
+        ],
+        "availability": true,
+        "rating": 4.5
+    }
+]
