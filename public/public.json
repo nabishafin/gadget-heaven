@@ -66,7 +66,7 @@
     {
         "product_id": 5,
         "product_title": "Xiaomi Mi 11",
-        "product_image": "https://i.ibb.co.com/hZTHX67/Xiaomi-Mi-11.jpg",
+        "product_image": "https://i.ibb.co.com/cb43XKy/Xiaomi-Mi-11.jpg",
         "category": "phones",
         "price": 749,
         "description": "Flagship phone with powerful Snapdragon 888 processor.",
@@ -145,7 +145,7 @@
     },
     {
         "product_id": 10,
-        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_title": "Lenovo ThinkPad X1",
         "product_image": "https://i.ibb.co.com/DWndVkF/Lenovo-Think-Pad-X1-Carbon.webp",
         "category": "laptops",
         "price": 1649,
@@ -162,7 +162,7 @@
     {
         "product_id": 11,
         "product_title": "Asus ROG Zephyrus G14",
-        "product_image": "https://i.ibb.co.com/XxqGrkt/Asus-ROG-Zephyrus-G14.jpg",
+        "product_image": "https://i.ibb.co.com/jkh1T58/ok.jpg",
         "category": "laptops",
         "price": 1499,
         "description": "Gaming laptop with powerful graphics and compact design.",
@@ -177,7 +177,7 @@
     },
     {
         "product_id": 12,
-        "product_title": "Microsoft Surface Laptop 4",
+        "product_title": "Microsoft Surface ",
         "product_image": "https://i.ibb.co.com/mHY7jdT/Microsoft-Surface-Laptop-4.jpg",
         "category": "laptops",
         "price": 1399,
@@ -194,7 +194,7 @@
     {
         "product_id": 13,
         "product_title": "Apple Watch Series 7",
-        "product_image": "https://i.ibb.co.com/vJZVLTr/Apple-Watch-Series-7.jpg",
+        "product_image": "https://i.ibb.co.com/FgzCM8J/Apple-Watch-Series-7.webp",
         "category": "watches",
         "price": 399,
         "description": "Smartwatch with fitness tracking and health features.",
