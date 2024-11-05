@@ -1,6 +1,6 @@
 import React from 'react';
 import { MdDeleteForever } from "react-icons/md";
-const ProductCart = ({ item }) => {
+const ProductCart = ({ item, handleSortBtn }) => {
 
 
     return (
@@ -11,7 +11,7 @@ const ProductCart = ({ item }) => {
                         <img src={item.product_image} />
                     </div>
 
-                    <div className=' flex-col lg:flex items-start '>
+                    <div className='flex-col lg:flex items-start '>
                         <h2 className='text-2xl font-semibold '>{item.product_title}</h2>
                         <h3 className='flex ' >{item.description}</h3>
                         <h3 className=''>Price : ${item.price}</h3>

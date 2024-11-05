@@ -5,6 +5,23 @@ import Header from '../components/Header';
 import { useLoaderData } from 'react-router-dom';
 import { getStoredCartList } from '../utility/addToDb';
 import ProductCart from '../components/ProductCart';
+import { AiFillCarryOut } from "react-icons/ai";
+
+
+
+import Modal from 'react-modal';
+
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+};
+
 
 const Dashboard = () => {
 
@@ -20,7 +37,32 @@ const Dashboard = () => {
     }, [])
 
 
+    const handleSortBtn = () => {
+        const updateSortList = [...cartProducts].sort((a, b) => b.price - a.price);
+        setCartProducts(updateSortList)
+    }
 
+    const totalBalance = cartProducts.reduce((a, b) => {
+        return a + b.price;
+    }, 0);
+
+
+    // modal
+    let subtitle;
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+        subtitle.style.color = '#f00';
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
 
 
     return (
@@ -42,9 +84,9 @@ const Dashboard = () => {
                         <div className='flex justify-between'>
                             <h1 className='text-2xl lg:text-3xl font-bold'>Cart </h1>
                             <div className='flex gap-5 items-center'>
-                                <p className='text-xl lg:text-2xl font-bold hidden md:block'>  Total Cost : {0}</p>
-                                <button className='bg-emerald-400 p-2 rounded-xl hover:bg-emerald-700 '>Short By Price</button>
-                                <button className='bg-emerald-400 p-2 rounded-xl hover:bg-emerald-700 '>Purchase</button>
+                                <p className='text-xl lg:text-2xl font-bold hidden md:block'>  Total Cost : {totalBalance}</p>
+                                <button onClick={() => handleSortBtn()} className='bg-emerald-400 p-2 rounded-xl hover:bg-emerald-700 '>Short By Price</button>
+                                <button onClick={openModal} className='bg-emerald-400 p-2 rounded-xl hover:bg-emerald-700 '>Purchase</button>
                             </div>
                         </div>
                         {
@@ -53,15 +95,31 @@ const Dashboard = () => {
                                 key={p.product_id}
                             />)
                         }
+                        <div>
+                            <Modal
+                                isOpen={modalIsOpen}
+                                onAfterOpen={afterOpenModal}
+                                onRequestClose={closeModal}
+                                style={customStyles}
+                                contentLabel="Example Modal"
+                            >
+                                <div className='flex flex-col items-center justify-center'>
+                                    <h1 className='text-4xl text-emerald-400'><AiFillCarryOut /></h1>
+                                    <h2 className='text-2xl font-bold'>Paymet SucessFully</h2>
+                                    <p className='py-2 text-xl'>Thanks for purchasing</p>
+                                    <p className='py-2 text-xl'>Total:{totalBalance}</p>
+                                    <div>
+                                        <button className='p-2 bg-emerald-400 rounded-2xl ' onClick={closeModal}>close</button>
+                                    </div>
+                                </div>
+                            </Modal>
+                        </div>
                     </TabPanel>
                     <TabPanel>
                         <h2>Any content 2</h2>
                     </TabPanel>
                 </Tabs>
             </div>
-
-
-
         </div>
     );
 };
