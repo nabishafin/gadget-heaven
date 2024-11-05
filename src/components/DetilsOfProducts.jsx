@@ -2,6 +2,13 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { FaNs8, FaRegHeart } from "react-icons/fa";
 import { addToStoreCartList } from '../utility/addToDb';
+import { toast, ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
 const DetilsOfProducts = () => {
 
     const { productsId } = useParams()
@@ -48,13 +55,18 @@ const DetilsOfProducts = () => {
                             {data.rating}
                         </p>
                         <div className='flex gap-10 mt-5 items-center'>
-                            <button onClick={() => { handleAddCart(data.product_id) }} className='btn'>Add to Cart</button>
+                            <button onClick={() => {
+                                handleAddCart(data.product_id)
+
+                            }} className='btn'>Add to Cart</button>
+
 
                             <button className='bg-white rounded-full btn p-2'><FaRegHeart className="text-2xl" /></button>
                         </div>
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div >
     );
 };

@@ -1,4 +1,5 @@
 import { json } from "react-router-dom"
+import { toast } from "react-toastify"
 
 const getStoredCartList = () => {
     const storedListstr = localStorage.getItem('cart-list')
@@ -22,6 +23,7 @@ const addToStoreCartList = (id) => {
         storedList.push(id)
         const storedListstr = JSON.stringify(storedList)
         localStorage.setItem('cart-list', storedListstr)
+        toast("Item Added")
     }
 }
 

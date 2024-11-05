@@ -39,6 +39,14 @@ const Dashboard = () => {
                     </TabList>
 
                     <TabPanel>
+                        <div className='flex justify-between'>
+                            <h1 className='text-2xl lg:text-3xl font-bold'>Cart </h1>
+                            <div className='flex gap-5 items-center'>
+                                <p className='text-xl lg:text-2xl font-bold hidden md:block'>  Total Cost : {0}</p>
+                                <button className='bg-emerald-400 p-2 rounded-xl hover:bg-emerald-700 '>Short By Price</button>
+                                <button className='bg-emerald-400 p-2 rounded-xl hover:bg-emerald-700 '>Purchase</button>
+                            </div>
+                        </div>
                         {
                             cartProducts.map(p => <ProductCart
                                 item={p}
