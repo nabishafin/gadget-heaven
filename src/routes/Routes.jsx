@@ -5,6 +5,7 @@ import Shered from "../shered/Shered";
 import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
+import DetilsOfProducts from "../components/DetilsOfProducts";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,12 @@ const router = createBrowserRouter([
             {
                 path: "/dashboard",
                 element: <Dashboard />,
+                loader: () => fetch('/public/public.json')
+            },
+            {
+                path: "/details/:productsId",
+                element: <DetilsOfProducts />,
+                loader: () => fetch('/public/public.json')
             },
 
         ]

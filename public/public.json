@@ -145,7 +145,7 @@
     },
     {
         "product_id": 10,
-        "product_title": "Lenovo ThinkPad X1",
+        "product_title": "Lenovo ThinkPad ",
         "product_image": "https://i.ibb.co.com/DWndVkF/Lenovo-Think-Pad-X1-Carbon.webp",
         "category": "laptops",
         "price": 1649,
@@ -161,7 +161,7 @@
     },
     {
         "product_id": 11,
-        "product_title": "Asus ROG Zephyrus G14",
+        "product_title": "Asus ROG ",
         "product_image": "https://i.ibb.co.com/jkh1T58/ok.jpg",
         "category": "laptops",
         "price": 1499,
@@ -193,7 +193,7 @@
     },
     {
         "product_id": 13,
-        "product_title": "Apple Watch Series 7",
+        "product_title": "Apple Watch ",
         "product_image": "https://i.ibb.co.com/FgzCM8J/Apple-Watch-Series-7.webp",
         "category": "watches",
         "price": 399,

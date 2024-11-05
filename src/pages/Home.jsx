@@ -10,6 +10,9 @@ const Home = () => {
 
     const [products, setProducts] = useState([])
     const [category, setCategory] = useState('')
+
+
+
     useEffect(() => {
         fetch('/public/public.json')
             .then(res => res.json())
