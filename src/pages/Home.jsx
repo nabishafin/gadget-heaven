@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import Header from '../components/Header';
 import Categories from '../components/Categories';
 import ProductsContainer from '../components/ProductsContainer';
+import data from "../../public/public.json"
 
 
 
@@ -14,7 +15,7 @@ const Home = () => {
 
 
     useEffect(() => {
-        fetch('/public.json')
+        fetch(data)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
