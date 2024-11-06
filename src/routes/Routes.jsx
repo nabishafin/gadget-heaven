@@ -6,12 +6,14 @@ import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
 import DetilsOfProducts from "../components/DetilsOfProducts";
+import ErrorPage from "../components/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Shered />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",

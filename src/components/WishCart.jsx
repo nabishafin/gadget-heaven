@@ -1,8 +1,6 @@
 import React from 'react';
-import { MdDeleteForever } from "react-icons/md";
-const ProductCart = ({ item, handleDeleted }) => {
 
-
+const WishCart = ({ item }) => {
     return (
         <div>
             <div className='border-2 flex justify-between items-center p-3 rounded mt-2'>
@@ -18,12 +16,10 @@ const ProductCart = ({ item, handleDeleted }) => {
                     </div>
 
                 </div>
-                <div >
-                    <button onClick={() => { handleDeleted(item.product_id) }} className='text-3xl btn'><MdDeleteForever /></button>
-                </div>
+
             </div>
-        </div >
+        </div>
     );
 };
 
-export default ProductCart;
+export default WishCart;
